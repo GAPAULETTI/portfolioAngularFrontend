@@ -1,0 +1,31 @@
+.box{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: rgb(49, 50, 53);
+}
+.one{
+    
+    flex-grow: 1 1 auto;
+    
+}
+.two{
+    flex-grow: 2 1 auto;
+    font-style: oblique;
+    color: rgb(243, 192, 26);
+}
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-style: italic;
+    color: rgb(243, 192, 26);
+}
+
+.perfil{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem 3rem 3rem 3rem;
+    
+    position:static;
+    
+  }
+  

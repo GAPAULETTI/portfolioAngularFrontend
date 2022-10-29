@@ -1,0 +1,27 @@
+
+<mat-form-field appearance="fill">
+    <mat-label>Titulo</mat-label>
+    <input matInput placeholder="Título" [(ngModel)]="educacion.titulo">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Institucion</mat-label>
+    <input matInput placeholder="Institución" [(ngModel)]="educacion.institucion">
+</mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Fecha de Inicio</mat-label>
+        <input type="date" matInput [(ngModel)]="educacion.fechaInicio">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Fecha de Fin</mat-label>
+        <input type="date" matInput [(ngModel)]="educacion.fechaFin">
+    </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Descripcion</mat-label>
+    <textarea matInput placeholder="Descripción" [(ngModel)]="educacion.descripcion"></textarea>
+  </mat-form-field>
+  <button mat-button color="warm" (click)="guardar()">
+    Guardar
+</button>
+<button mat-button color="primary" (click)="cancelar()">
+    Cancelar
+</button>

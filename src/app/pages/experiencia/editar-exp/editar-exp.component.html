@@ -1,0 +1,40 @@
+    <div>
+        <mat-form-field appearance="legacy">
+            <mat-label>Cargo</mat-label>
+            <input matInput placeholder="Cargo" [(ngModel)]="experiencia.cargo">
+            <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+            <mat-label>Empresa</mat-label>
+            <input matInput placeholder="Empresa" [(ngModel)]="experiencia.empresa">
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+            <mat-label>Ciudad</mat-label>
+            <input matInput placeholder="Ciudad" [(ngModel)]="experiencia.ciudad">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="legacy">
+            <mat-label>Inicio</mat-label>
+            <input type="date" matInput [(ngModel)]="experiencia.inicio">
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+            <mat-label>Finalización</mat-label>
+            <input type="date" matInput [(ngModel)]="experiencia.finalizacion">
+        </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="legacy">
+        <mat-label>Tareas Realizadas</mat-label>
+        <textarea matInput placeholder="Tareas Realizadas" [(ngModel)]="experiencia.tareasRealizadas"></textarea>
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-button color="warm" (click)="guardar()">
+        Guardar
+    </button>
+    <button mat-button color="primary" (click)="cancelar()">
+        Cancelar
+    </button>
+    </div>
+
