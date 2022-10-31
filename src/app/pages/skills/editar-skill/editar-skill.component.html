@@ -1,0 +1,22 @@
+<div>
+    
+    <mat-form-field appearance="legacy">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombre" [(ngModel)]="skill.nombre">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Nivel</mat-label>
+        <input matInput placeholder="Nivel" [(ngModel)]="skill.nivel">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Descripcion</mat-label>
+        <input matInput placeholder="Descripcion" [(ngModel)]="skill.descripcion">
+    </mat-form-field>
+    <button mat-button color="warm" (click)="guardar()">
+        Guardar
+    </button>
+    <button mat-button color="primary" (click)="cancelar()">
+        Cancelar
+    </button>
+</div>
+

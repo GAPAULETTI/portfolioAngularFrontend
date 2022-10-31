@@ -21,9 +21,14 @@ import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './pages/header/header.component';
 import { AboutComponent } from './pages/about/about.component';
-import { SkillsComponent } from './pages/skills/skills.component';
+
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { EditarExpComponent } from './pages/experiencia/editar-exp/editar-exp.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import {MatSliderModule} from '@angular/material/slider';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { EditarSkillComponent } from './pages/skills/editar-skill/editar-skill.component';
 
 
 
@@ -36,10 +41,11 @@ import { EditarExpComponent } from './pages/experiencia/editar-exp/editar-exp.co
     EduEditarComponent,
     HeaderComponent,
     AboutComponent,
-    SkillsComponent,
     ProyectosComponent,
-    EditarExpComponent
-    
+    EditarExpComponent,
+    SkillsComponent,
+    EditarSkillComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -55,8 +61,11 @@ import { EditarExpComponent } from './pages/experiencia/editar-exp/editar-exp.co
     MatToolbarModule,
     MatFormFieldModule,
     MatSelectModule,
-    FormsModule
-   
+    FormsModule,
+    MatProgressSpinnerModule,
+    MatCardModule,
+    MatProgressBarModule,
+    MatSliderModule   
 
   ],
   providers: [],

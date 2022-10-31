@@ -1,4 +1,4 @@
-import { DatePipe } from '@angular/common';
+
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Educacion } from 'src/app/model/Educacion';
@@ -47,9 +47,7 @@ export class EduEditarComponent implements OnInit {
     this.cancelar();
     }
 
-  
-
-  cancelar(){
+    cancelar(){
     this.dialogRef.close();
   }
  

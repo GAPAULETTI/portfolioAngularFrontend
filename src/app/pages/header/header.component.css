@@ -5,4 +5,12 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+.tool{
+    color: rgb(190, 190, 190) ;
+    background-color:rgb(136, 152, 241);
+}
+.titulo{
+    font-size:x-large;
+    text-size-adjust:initial;
+}
   
