@@ -1,5 +1,14 @@
-table {
+.table-s {
     width: 100%;
+    caption-side: bottom;
+    table-layout:fixed;
+    border-bottom: 1px solid;
+    align-items:flex-end;
+    align-self: center;
+    border-collapse:separate;
+   
+    
+    
   }
   
   .mat-form-field {
@@ -10,3 +19,16 @@ table {
     flex: 1 1 auto;
     flex-direction: row-reverse;
   }
+  .bar{
+    width: 80%;
+     
+    margin-top: 17px;
+   
+    
+
+    
+    
+    
+  }
+  
+  

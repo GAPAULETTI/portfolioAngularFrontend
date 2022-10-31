@@ -1,1 +1,25 @@
-<p>proyectos works!</p>
+<mat-card>
+<section class="example-section" *ngIf="mode === 'determinate' || mode === 'buffer'">
+    <label class="example-margin">Skill</label>
+    <mat-slider class="example-margin" [(ngModel)]="value"></mat-slider>
+  </section>
+  <section class="example-section" *ngIf="mode === 'buffer'">
+    <label class="example-margin">Buffer:</label>
+    <mat-slider class="example-margin" [(ngModel)]="bufferValue"></mat-slider>
+  </section>
+
+    <mat-card-content>
+      <h2 class="example-h2">Nivel</h2>
+  
+      <section class="pb-section">
+        <mat-progress-bar
+            class="example-margin"          
+            [color]="color"
+            [mode]="mode"
+            [value]="value"
+            [bufferValue]="bufferValue">
+        </mat-progress-bar>
+      </section>
+      <button mat-raised-button color="primary">Primary</button>
+    </mat-card-content>
+  </mat-card>

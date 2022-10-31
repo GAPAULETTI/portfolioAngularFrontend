@@ -29,6 +29,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import {MatSliderModule} from '@angular/material/slider';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { EditarSkillComponent } from './pages/skills/editar-skill/editar-skill.component';
+import { CardComponent } from './pages/skills/card/card.component';
+import { LoginComponent } from './pages/login/login.component';
+import {MatInputModule } from '@angular/material/input';
+
 
 
 
@@ -44,7 +48,10 @@ import { EditarSkillComponent } from './pages/skills/editar-skill/editar-skill.c
     ProyectosComponent,
     EditarExpComponent,
     SkillsComponent,
-    EditarSkillComponent
+    EditarSkillComponent,
+    CardComponent,
+    LoginComponent
+   
   
   ],
   imports: [
@@ -65,7 +72,8 @@ import { EditarSkillComponent } from './pages/skills/editar-skill/editar-skill.c
     MatProgressSpinnerModule,
     MatCardModule,
     MatProgressBarModule,
-    MatSliderModule   
+    MatSliderModule,
+    MatInputModule  
 
   ],
   providers: [],

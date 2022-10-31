@@ -6,6 +6,7 @@ import { SkillsService } from 'src/app/service/skills.service';
 import { ConfirmDialogComponent } from '../educacion/confirm-dialog/confirm-dialog.component';
 import { EditarSkillComponent } from './editar-skill/editar-skill.component';
 
+
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -13,7 +14,7 @@ import { EditarSkillComponent } from './editar-skill/editar-skill.component';
 })
 export class SkillsComponent implements OnInit {
 
-  displayedColumns = ['id','nombre','valor','descripcion','editar-eliminar'];
+  displayedColumns = ['nombre','nivel','descripcion','editar-eliminar'];
   dataSource: MatTableDataSource<Skills>;
   skill:Skills;
   mensaje: String;

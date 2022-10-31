@@ -7,6 +7,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
 import { EduEditarComponent } from './edu-editar/edu-editar.component';
 
 
+
 @Component({
   selector: 'app-educacion',
   templateUrl: './educacion.component.html',
@@ -18,6 +19,7 @@ export class EducacionComponent implements OnInit {
   displayedColumns = ['titulo','institucion','fechaInicio','fechaFin', 'descripcion','editar-eliminar'];
   dataSource: MatTableDataSource<Educacion>
   educacion: Educacion;
+  
 
   constructor(
     private dialog: MatDialog,
@@ -54,6 +56,7 @@ export class EducacionComponent implements OnInit {
       data: edu
     })
   }
+  
   
   
 }

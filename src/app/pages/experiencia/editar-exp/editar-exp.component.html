@@ -1,30 +1,30 @@
     <div>
-        <mat-form-field appearance="legacy">
+        <mat-form-field appearance="fill">
             <mat-label>Cargo</mat-label>
-            <input matInput placeholder="Cargo" [(ngModel)]="experiencia.cargo">
+            <input matInput  [(ngModel)]="experiencia.cargo" type="string" placeholder="Cargo">
             <mat-hint>Hint</mat-hint>
         </mat-form-field>
-        <mat-form-field appearance="legacy">
+        <mat-form-field appearance="fill">
             <mat-label>Empresa</mat-label>
             <input matInput placeholder="Empresa" [(ngModel)]="experiencia.empresa">
         </mat-form-field>
-        <mat-form-field appearance="legacy">
+        <mat-form-field appearance="fill">
             <mat-label>Ciudad</mat-label>
             <input matInput placeholder="Ciudad" [(ngModel)]="experiencia.ciudad">
         </mat-form-field>
     </div>
     <div>
-        <mat-form-field appearance="legacy">
+        <mat-form-field appearance="fill">
             <mat-label>Inicio</mat-label>
-            <input type="date" matInput [(ngModel)]="experiencia.inicio">
+            <input type="date"  matInput [(ngModel)]="experiencia.inicio">
         </mat-form-field>
-        <mat-form-field appearance="legacy">
+        <mat-form-field appearance="fill">
             <mat-label>Finalización</mat-label>
-            <input type="date" matInput [(ngModel)]="experiencia.finalizacion">
+            <input type="date" name="fin" id="fina" matInput [(ngModel)]="experiencia.finalizacion">
         </mat-form-field>
     </div>
     <div>
-      <mat-form-field appearance="legacy">
+      <mat-form-field appearance="fill">
         <mat-label>Tareas Realizadas</mat-label>
         <textarea matInput placeholder="Tareas Realizadas" [(ngModel)]="experiencia.tareasRealizadas"></textarea>
       </mat-form-field>

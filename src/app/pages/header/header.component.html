@@ -1,5 +1,3 @@
-
-
 <mat-toolbar class="tool">
     
     <div>
@@ -11,10 +9,24 @@
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
       <mat-icon>facebook</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>login</mat-icon>
-    </button>
+    <div>
+    <!-- Profile -->
+                    <!-- ============================================================== -->
+                    <li type="none" class="nav-item dropdown">
+                      <span>Login</span>
+                      <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                      <div class="dropdown-menu dropdown-menu-right animated fadeIn">
+                          <ul class="dropdown-user" >
+                            <br><input type="email" name="email" placeholder="Email">
+                            <input type="password" name="password" placeholder="Password">
+                              <br><li type="none"><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
+                              <li type="none"><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                          </ul>
+                      </div>
+                  </li>
+                </div>
   </mat-toolbar>
+
     <div >
       <img class="banner"src="../../../assets/images/Banner2.png">
       
